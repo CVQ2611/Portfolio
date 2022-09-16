@@ -1,6 +1,13 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #ff724c;
+    --black-color: black;
+    --white-color: white;
+    --border-color: #f5f5f5;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,4 +23,16 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+button {
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
 }

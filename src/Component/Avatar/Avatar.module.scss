@@ -1,0 +1,13 @@
+.wrapper {
+    width: 100%;
+    padding: 16px 28px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    will-change: transform;
+    -webkit-transform: perspective(300) rotateX(0 deg) rotateY(0 deg);
+    transform: perspective(300px) rotateX(0 deg) rotateY(0 deg);
+    transition: all linear 0.2s;
+}

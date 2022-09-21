@@ -1,24 +1,28 @@
 import classNames from 'classnames/bind';
 import style from './Header.module.scss';
-import { publicPage } from '~/Routes/routes';
-import SideBar from '../SideBar/sidebar';
-import Avatar from '../Avatar/avatar';
+
+import TaskBar from '../TaskBar/taskBar';
+import { useViewport } from '~/Setwith/useViewport';
+import TaskBarSmall from '../TaskBarSmall/sideBarMT';
 
 const cx = classNames.bind(style);
+
 function Header() {
-    return (
-        <header className={cx('wrapper')}>
-            <div className={cx('info')}>
-                <div className={cx('avatar')}>
-                    <Avatar />
-                </div>
-                <div className={cx('name')}>Alex Smith</div>
-            </div>
-            <div className={cx('button')}>
-                <SideBar items={publicPage} />
-            </div>
-        </header>
-    );
+    const viewPort = useViewport();
+    const isMobile = viewPort.width <= 991;
+    if (isMobile) {
+        return (
+            <header className={cx('wrapper')}>
+                <TaskBarSmall />
+            </header>
+        );
+    } else {
+        return (
+            <header className={cx('wrapper')}>
+                <TaskBar />
+            </header>
+        );
+    }
 }
 
 export default Header;

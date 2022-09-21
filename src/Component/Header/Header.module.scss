@@ -1,24 +1,4 @@
 .wrapper {
     overflow: auto;
-}
-.info {
-    margin-bottom: 24px;
-}
-
-.avatar {
-    width: 100%;
-    padding: 4px 8px;
-}
-
-.name {
-    color: var(--primary-color);
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    padding: 0 32px;
-    text-align: center;
-}
-
-.button {
-    border-bottom: 1px solid var(--border-color);
-    padding-top: 16px;
+    height: 100%;
 }

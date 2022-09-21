@@ -20,7 +20,25 @@
     margin-left: 149px;
     height: 100%;
     background-image: url('https://itnavi.com.vn/theme-port/unique-vcard/images/bg.png');
-    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+// tablet - mobile
+.sidebar-mt {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    height: var(--heigh-header-small);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.content-mt {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://itnavi.com.vn/theme-port/unique-vcard/images/bg.png');
     background-repeat: no-repeat;
 }

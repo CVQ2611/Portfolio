@@ -58,3 +58,11 @@
         -webkit-animation: zoomIn linear 0.15s;
     }
 }
+
+.mobile {
+    width: auto;
+    height: 100%;
+    color: var(--primary-color);
+    font-size: 2rem;
+    background-color: var(--white-color);
+}

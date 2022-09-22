@@ -20,27 +20,34 @@ function AboutMePage({ name }) {
                         <Avatar />
                     </div>
 
-                    <div className={cx('desc')}>
-                        <div className={cx('title')}>I am Web Designer @ Company.com</div>
-                        <div className={cx('text')}>
-                            Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero,
-                            facilisis et nisi non, tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque enim
-                            ac, faucibus tortor. Nulla odio nibh, cursus sit amet urna id, dignissim euismod augue.
-                            <br />
-                            Duis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis
-                            ornare augue tortor non est. Class aptent taciti sociosqu ad litora torquent per conubia
-                            nostra, per inceptos himenaeos.
+                    <div className={cx('use-info')}>
+                        <div className={cx('desc')}>
+                            <div className={cx('title')}>I am Web Designer @ Company.com</div>
+                            <div className={cx('text')}>
+                                Praesent ut tortor consectetur, semper sapien non, lacinia augue. Aenean arcu libero,
+                                facilisis et nisi non, tempus faucibus tortor. Mauris vel nulla aliquam, pellentesque
+                                enim ac, faucibus tortor. Nulla odio nibh, cursus sit amet urna id, dignissim euismod
+                                augue.
+                                <br />
+                                Duis sollicitudin, libero porttitor rutrum ultrices, turpis lorem fermentum justo, quis
+                                ornare augue tortor non est. Class aptent taciti sociosqu ad litora torquent per conubia
+                                nostra, per inceptos himenaeos.
+                            </div>
+                        </div>
+
+                        <div className={cx('contact')}>
+                            <AboutInfo infos={infos} socials={socials} />
                         </div>
                     </div>
-
-                    <AboutInfo infos={infos} socials={socials} />
                 </div>
 
                 <div className={cx('service')}>
                     <div className={cx('service-header')}>Services</div>
                     <div className={cx('service-list')}>
                         {skills.map((service) => (
-                            <Services key={service.id} data={service} />
+                            <div className={cx('service-item')} key={service.id}>
+                                <Services data={service} />
+                            </div>
                         ))}
                     </div>
                 </div>

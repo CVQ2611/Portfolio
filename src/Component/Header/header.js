@@ -9,7 +9,7 @@ const cx = classNames.bind(style);
 
 function Header() {
     const viewPort = useViewport();
-    const isMobile = viewPort.width <= 991;
+    const isMobile = viewPort.width <= 1023;
     if (isMobile) {
         return (
             <header className={cx('wrapper')}>

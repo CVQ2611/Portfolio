@@ -22,8 +22,8 @@ class Avatar extends React.Component {
         const _oY = e.nativeEvent.offsetY;
         // console.log(_oX, _oY);
         this.setState({
-            x: (_oY - width / 2) / 3.6,
-            y: (_oX + heigh / 2) / 3.6,
+            x: (_oY - width / 2) / 12,
+            y: (_oX + heigh / 2) / 12,
         });
     };
 

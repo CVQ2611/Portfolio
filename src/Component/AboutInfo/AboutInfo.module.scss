@@ -1,0 +1,56 @@
+// info right
+.info {
+    width: 33.3333%;
+    text-align: left;
+    padding: 0 12px;
+}
+
+.list-info {
+    padding-bottom: 12px;
+}
+
+.info-item {
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.info-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #222;
+    outline: none;
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--primary-color);
+        top: 100%;
+        left: 0;
+    }
+}
+
+.info-value {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #222;
+}
+
+.social {
+    padding: 12px 0;
+}
+
+.social-item {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+
+    & ~ .social-item {
+        margin-left: 12px;
+        margin-left: 12px;
+    }
+}

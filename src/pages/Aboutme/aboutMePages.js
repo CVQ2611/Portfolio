@@ -1,20 +1,19 @@
 import Container from '~/Layouts/ContainerLayout/container';
 import classNames from 'classnames/bind';
 import style from './AboutMe.module.scss';
-import { user } from '~/Data/data';
+import { user, socials, infos, skills } from '~/Data/data';
 import Avatar from '~/Component/Avatar/avatar';
+
+import NamePage from '~/Component/NamePage/namePage';
+import AboutInfo from '~/Component/AboutInfo/aboutInfo';
+import Services from '~/Component/Services/services';
 const cx = classNames.bind(style);
 
 function AboutMePage({ name }) {
     return (
-        <>
+        <div className={cx('wrapper')}>
             <Container>
-                <div className={cx('header')}>
-                    <span className={cx('section')}>
-                        <span className={cx('name')}>{name}</span>
-                        <span className={cx('slogan')}>{user.slogan}</span>
-                    </span>
-                </div>
+                <NamePage data={user.about} name={name} />
 
                 <div className={cx('content')}>
                     <div className={cx('avatar')}>
@@ -34,10 +33,19 @@ function AboutMePage({ name }) {
                         </div>
                     </div>
 
-                    <div className={cx('info')}></div>
+                    <AboutInfo infos={infos} socials={socials} />
+                </div>
+
+                <div className={cx('service')}>
+                    <div className={cx('service-header')}>Services</div>
+                    <div className={cx('service-list')}>
+                        {skills.map((service) => (
+                            <Services key={service.id} data={service} />
+                        ))}
+                    </div>
                 </div>
             </Container>
-        </>
+        </div>
     );
 }
 

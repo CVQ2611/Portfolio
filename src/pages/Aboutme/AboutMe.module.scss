@@ -1,28 +1,7 @@
-.header {
+.wrapper {
     width: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-.section {
-    display: block;
-    width: 360px;
-    margin: auto;
-    text-align: right;
-}
-
-.name {
-    display: block;
-    font-size: 6rem;
-    line-height: 6rem;
-    font-weight: 700;
-    color: #eee;
-}
-
-.slogan {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 0 8px;
+    height: 100%;
+    background-color: transparent;
 }
 
 .content {
@@ -32,11 +11,15 @@
     text-align: center;
 }
 
+// avartar
+
 .avatar {
     width: 33.3333%;
     padding: 0 12px;
     z-index: 0;
 }
+
+// info mid
 
 .desc {
     width: 33.3333%;
@@ -58,4 +41,21 @@
     font-weight: 400;
     color: #555555;
     text-align: left;
+}
+
+.service {
+    width: 100%;
+    padding: 16px 20px;
+}
+
+.service-header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    border-left: 2px solid var(--primary-color);
+}
+
+.service-list {
+    display: flex;
 }

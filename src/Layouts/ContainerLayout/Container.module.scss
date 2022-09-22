@@ -1,13 +1,13 @@
 .wrapper {
     width: 100%;
     height: 100%;
-    margin: 12px 0;
     background-color: transparent;
     position: relative;
 }
 
 .container {
     max-height: 586px;
+    height: 100%;
     min-width: 1094px;
     background-color: var(--white-color);
     position: absolute;

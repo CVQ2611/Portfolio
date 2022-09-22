@@ -1,0 +1,83 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    animation: fromLeft ease-in-out 0.6s;
+    transition: all ease-in-out 0.6s;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 28px;
+    margin-top: 32px;
+}
+
+.edu-header {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+    padding: 0 8px;
+    margin-bottom: 24px;
+    border-left: 2px solid var(--primary-color);
+}
+
+.education,
+.experience,
+.char {
+    padding: 12px 12px;
+}
+
+.education {
+    width: 33.3333%;
+}
+
+.experience {
+    width: 33.3333%;
+}
+
+.char {
+    width: 33.3337%;
+}
+
+.design-skill {
+    margin-bottom: 24px;
+}
+
+.button-download {
+    height: 40px;
+    width: 138px;
+    margin-top: 32px;
+    margin-left: 38px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .education {
+        width: 50%;
+    }
+    .experience {
+        width: 50%;
+    }
+    .char {
+        width: 50%;
+    }
+}
+
+@media (max-width: 740px) {
+    .education {
+        width: 100%;
+    }
+    .experience {
+        width: 100%;
+    }
+    .char {
+        width: 100%;
+    }
+}
+
+@keyframes fromLeft {
+    from {
+        transform: translateX(-80%);
+        opacity: 0.3;
+    }
+}

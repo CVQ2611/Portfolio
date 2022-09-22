@@ -2,6 +2,7 @@ import { faTwitter, faFacebookF, faGooglePlusG, faYoutube, faInstagram } from '@
 
 export const user = {
     about: 'Artist, Thinker, Creative Doer',
+    resume: '6 Years of Experience',
 };
 
 export const infos = [
@@ -96,4 +97,66 @@ export const skills = [
         src: 'https://itnavi.com.vn/theme-port/unique-vcard/images/service/advetising_icon.png',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.',
     },
+];
+
+export const educations = [
+    {
+        id: 1,
+        time: 2010,
+        branch: 'Specialization Course',
+        company: 'University of Studies',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+    {
+        id: 2,
+        time: 2009,
+        branch: 'Specialization Course',
+        company: 'University of Studies',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+    {
+        id: 3,
+        time: 2008,
+        branch: 'Specialization Course',
+        company: 'University of Studies',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+];
+
+export const experiences = [
+    {
+        id: 1,
+        time: 'Dec 2012 - Current',
+        branch: 'Frontend-developer',
+        company: 'Web Agency',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+    {
+        id: 2,
+        time: 'Dec 2011 - Nov 2012',
+        branch: 'Web Designer',
+        company: 'Apple Inc.',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+    {
+        id: 3,
+        time: 'Jan 2010 - Dec 2011',
+        branch: 'Graphic Designer',
+        company: 'Web Agency',
+        mission: 'Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.',
+    },
+];
+
+export const designSkills = [
+    { id: 1, name: 'Web Design', experien: '80%' },
+    { id: 2, name: 'Graphic Design', experien: '70%' },
+    { id: 3, name: 'Print Design', experien: '60%' },
+];
+
+export const codingSkills = [
+    { id: 1, name: 'HTML5', experien: '90%' },
+    { id: 2, name: 'CSS3', experien: '80%' },
+    { id: 3, name: 'jQuery', experien: '60%' },
+    { id: 4, name: 'Wordpress', experien: '40%' },
+    { id: 5, name: 'PHP', experien: '70%' },
 ];

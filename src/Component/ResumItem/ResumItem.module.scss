@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100%;
+    margin-left: 12px;
+    border-left: 1px solid var(--border-color);
+}
+
+.time {
+    width: auto;
+    background-color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--white-color);
+    padding: 4px 8px;
+    margin-top: 8px;
+}
+
+.content {
+    padding: 8px 20px;
+    margin-top: 8px;
+}
+
+.branch {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.company {
+    font-size: 12px;
+    font-weight: 300;
+    color: #a5a5a5;
+    margin-bottom: 2px;
+}
+
+.mission {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 24px;
+}

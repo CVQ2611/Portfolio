@@ -2,14 +2,15 @@
 .header {
     width: 100%;
     padding: 20px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .section {
     display: block;
-    width: 360px;
     margin: auto;
-    text-align: right;
+    text-align: center;
+    position: relative;
 }
 
 .name {
@@ -21,7 +22,11 @@
 }
 
 .slogan {
+    display: block;
+    position: absolute;
     background-color: var(--primary-color);
     color: var(--white-color);
+    left: 50%;
     padding: 0 8px;
+    text-align: right;
 }

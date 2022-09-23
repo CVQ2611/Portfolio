@@ -4,6 +4,7 @@ export const user = {
     about: 'Artist, Thinker, Creative Doer',
     resume: '6 Years of Experience',
     portfolio: 'My Best Works',
+    contact: 'get In Touch',
 };
 
 export const infos = [

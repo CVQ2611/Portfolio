@@ -3,6 +3,7 @@ import { faTwitter, faFacebookF, faGooglePlusG, faYoutube, faInstagram } from '@
 export const user = {
     about: 'Artist, Thinker, Creative Doer',
     resume: '6 Years of Experience',
+    portfolio: 'My Best Works',
 };
 
 export const infos = [
@@ -159,4 +160,35 @@ export const codingSkills = [
     { id: 3, name: 'jQuery', experien: '60%' },
     { id: 4, name: 'Wordpress', experien: '40%' },
     { id: 5, name: 'PHP', experien: '70%' },
+];
+
+export const myWork = [
+    {
+        id: 1,
+        name: 'Work 1',
+        tool: 'VS code',
+        src: 'https://itnavi.com.vn/theme-port/unique-vcard/images/portfolio/3.jpg',
+        href: 'https://github.com/CVQ2611',
+    },
+    {
+        id: 2,
+        name: 'Work 2',
+        tool: 'VS code',
+        src: 'https://itnavi.com.vn/theme-port/unique-vcard/images/portfolio/full/5.jpg',
+        href: 'https://github.com/CVQ2611',
+    },
+    {
+        id: 3,
+        name: 'Work 3',
+        tool: 'VS code',
+        src: 'https://itnavi.com.vn/theme-port/unique-vcard/images/portfolio/full/9.jpg',
+        href: 'https://github.com/CVQ2611',
+    },
+    {
+        id: 4,
+        name: 'Work 4',
+        tool: 'VS code',
+        src: 'https://itnavi.com.vn/theme-port/unique-vcard/images/portfolio/11.jpg',
+        href: 'https://github.com/CVQ2611',
+    },
 ];

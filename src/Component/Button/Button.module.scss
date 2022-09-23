@@ -88,3 +88,11 @@
     background-color: var(--white-color);
     font-size: 1.4rem;
 }
+
+.box {
+    background-color: transparent;
+    display: block;
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+}

@@ -14,6 +14,7 @@ function Button({
     href,
     onClick,
     mobile,
+    box,
     ...passProps
 }) {
     const props = { onClick, ...passProps };
@@ -31,6 +32,7 @@ function Button({
         download,
         boder,
         mobile,
+        box,
     });
     return (
         <Comp className={classes} {...props}>

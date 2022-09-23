@@ -19,12 +19,12 @@ function DefaultLayout({ children }) {
         );
     } else {
         return (
-            <div className={cx('wrapper')}>
+            <>
                 <div className={cx('sidebar')}>
                     <Header />
                 </div>
                 <div className={cx('content')}>{children}</div>
-            </div>
+            </>
         );
     }
 }

@@ -7,7 +7,6 @@ const cx = classNames.bind(style);
 function HomePage() {
     // animation for slider
     const [index, setIndex] = useState(0);
-    const lengths = skills.length;
     // console.log(index);
     const timeOutRef = useRef(null);
     // console.log(timeOutRef.current);
@@ -23,7 +22,7 @@ function HomePage() {
         timeOutRef.current = setTimeout(() => {
             setIndex((preIndex) => {
                 //eslint-disable-next-line
-                if (preIndex === lengths - 1) {
+                if (preIndex === 3 - 1) {
                     return 0;
                 } else return preIndex + 1;
             });

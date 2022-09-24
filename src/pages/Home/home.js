@@ -22,7 +22,7 @@ function HomePage() {
         timeOutRef.current = setTimeout(() => {
             setIndex((preIndex) => {
                 //eslint-disable-next-line
-                if (preIndex === 3 - 1) {
+                if (preIndex === 2) {
                     return 0;
                 } else return preIndex + 1;
             });

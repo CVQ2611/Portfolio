@@ -6,6 +6,7 @@ import { codingSkills, designSkills, educations, experiences, user } from '~/Dat
 import Button from '~/Component/Button/button';
 import ResumItem from '~/Component/ResumItem/resumeitem';
 import CharItem from '~/Component/Char/char';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 function ResumePage({ name }) {
     return (
@@ -50,4 +51,7 @@ function ResumePage({ name }) {
     );
 }
 
+ResumePage.propType = {
+    name: PropType.string.isRequired,
+};
 export default ResumePage;

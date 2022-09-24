@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import style from './Char.module.scss';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function CharItem({ item }) {
@@ -12,5 +13,7 @@ function CharItem({ item }) {
         </div>
     );
 }
-
+CharItem.propType = {
+    item: PropType.object.isRequired,
+};
 export default CharItem;

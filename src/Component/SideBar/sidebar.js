@@ -3,6 +3,7 @@ import style from './SideBar.module.scss';
 import Button from '../Button/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import PropType from 'prop-types';
 
 const cx = classNames.bind(style);
 
@@ -29,5 +30,10 @@ function SideBar({ items, handle }) {
         </>
     );
 }
+
+SideBar.propType = {
+    items: PropType.array.isRequired,
+    handle: PropType.func,
+};
 
 export default SideBar;

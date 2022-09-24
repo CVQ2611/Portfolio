@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import style from './Services.module.scss';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function Services({ data }) {
@@ -11,5 +12,9 @@ function Services({ data }) {
         </div>
     );
 }
+
+Services.propType = {
+    data: PropType.object.isRequired,
+};
 
 export default Services;

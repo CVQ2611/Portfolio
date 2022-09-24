@@ -4,6 +4,7 @@ import style from './Contact.module.scss';
 import { user, infos, socials } from '~/Data/data';
 import NamePage from '~/Component/NamePage/namePage';
 import AboutInfo from '~/Component/AboutInfo/aboutInfo';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function ContactPage({ name }) {
@@ -23,5 +24,9 @@ function ContactPage({ name }) {
         </div>
     );
 }
+
+ContactPage.propType = {
+    name: PropType.string,
+};
 
 export default ContactPage;

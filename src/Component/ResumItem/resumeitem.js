@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import style from './ResumItem.module.scss';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 function ResumItem({ item }) {
     return (
@@ -13,5 +14,8 @@ function ResumItem({ item }) {
         </div>
     );
 }
+ResumItem.propType = {
+    item: PropType.object.isRequired,
+};
 
 export default ResumItem;

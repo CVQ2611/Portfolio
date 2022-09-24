@@ -1,9 +1,9 @@
 import { faImage } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
-import React, { useState } from 'react';
 import Button from '../Button/button';
 import style from './Project.module.scss';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function Project({ data }) {
@@ -30,5 +30,9 @@ function Project({ data }) {
         </>
     );
 }
+
+Project.propType = {
+    data: PropType.object.isRequired,
+};
 
 export default Project;

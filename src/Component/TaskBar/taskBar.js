@@ -3,6 +3,7 @@ import style from './TaskBar.module.scss';
 import { publicPage } from '~/Routes/routes';
 import SideBar from '../SideBar/sidebar';
 import Avatar from '../Avatar/avatar';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function TaskBar({ clickHide }) {
@@ -21,4 +22,7 @@ function TaskBar({ clickHide }) {
     );
 }
 
+TaskBar.propType = {
+    clickHide: PropType.func,
+};
 export default TaskBar;

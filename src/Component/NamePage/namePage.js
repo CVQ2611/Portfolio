@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import style from './NamePage.module.scss';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function NamePage({ name, data }) {
@@ -12,5 +13,9 @@ function NamePage({ name, data }) {
         </div>
     );
 }
+NamePage.propType = {
+    name: PropType.string.isRequired,
+    data: PropType.string.isRequired,
+};
 
 export default NamePage;

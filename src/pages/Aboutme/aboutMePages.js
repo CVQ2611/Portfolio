@@ -3,10 +3,10 @@ import classNames from 'classnames/bind';
 import style from './AboutMe.module.scss';
 import { user, socials, infos, skills } from '~/Data/data';
 import Avatar from '~/Component/Avatar/avatar';
-
 import NamePage from '~/Component/NamePage/namePage';
 import AboutInfo from '~/Component/AboutInfo/aboutInfo';
 import Services from '~/Component/Services/services';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function AboutMePage({ name }) {
@@ -55,5 +55,9 @@ function AboutMePage({ name }) {
         </div>
     );
 }
+
+AboutMePage.propType = {
+    name: PropType.string.isRequired,
+};
 
 export default AboutMePage;

@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import style from './AboutInfo.module.scss';
 import Button from '~/Component/Button/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 
 function AboutInfo({ infos, socials }) {
@@ -27,5 +28,10 @@ function AboutInfo({ infos, socials }) {
         </div>
     );
 }
+
+AboutInfo.propType = {
+    infos: PropType.array.isRequired,
+    socials: PropType.array.isRequired,
+};
 
 export default AboutInfo;

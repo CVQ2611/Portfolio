@@ -22,6 +22,7 @@ function HomePage() {
         resetTimeOut();
         timeOutRef.current = setTimeout(() => {
             setIndex((preIndex) => {
+                //eslint-disable-next-line
                 if (preIndex === lengths - 1) {
                     return 0;
                 } else return preIndex + 1;

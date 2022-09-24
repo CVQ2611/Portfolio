@@ -4,6 +4,7 @@ import Container from '~/Layouts/ContainerLayout/container';
 import { myWork, user } from '~/Data/data';
 import style from './Portfolio.module.scss';
 import Project from '~/Component/Project/project';
+import PropType from 'prop-types';
 const cx = classNames.bind(style);
 function PortfolioPage({ name }) {
     return (
@@ -21,5 +22,8 @@ function PortfolioPage({ name }) {
         </div>
     );
 }
+PortfolioPage.propType = {
+    name: PropType.string.isRequired,
+};
 
 export default PortfolioPage;
